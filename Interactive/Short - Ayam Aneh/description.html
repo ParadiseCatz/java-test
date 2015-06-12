@@ -1,0 +1,159 @@
+<h3>Deskripsi</h3>
+
+<p>Untuk menghemat biaya perjalanan, Pak Dengklek dan bebek-bebeknya menginap di rumah Pak Blangkon. Di sana, Pak Dengklek melihat kebun Pak Blangkon yang penuh dengan ayam. Warna ayam Pak Blangkon bermacam-macam. Setiap hari, Pak Blangkon memberikan ayamnya makanan. Makanan ini dapat mengakibatkan DNA seekor ayam bermutasi dan alhasil menjadikan warna ayam tersebut berubah.</p>
+
+<p>Pak Dengklek yang tertarik melihat warna ayam-ayam itu ingin mencoba mengubah warna bebek-bebeknya sendiri. Pak Dengklek pun bertanya kepada Pak Blangkon tentang DNA ayam-ayam yang dimiliki Pak Blangkon agar Pak Dengklek bisa mengimplementasikannya ke bebeknya sendiri. Tetapi Pak Blangkon yang iseng menyuruh Pak Dengklek menebak sendiri apa DNA ayamnya tersebut.</p>
+
+<p>DNA ayam-ayam tersebut dapat direpresentasikan sebagai sebuah string yang terdiri atas N huruf kapital dari A sampai dengan Z. Semua huruf yang sama dalam sebuah string DNA pasti akan berada bersebelahan. Sebagai contoh, AAASSSDDDFF adalah sebuah string DNA, sedangkan AAASSSDDDAAFFF bukan karena di antara A terdapat kelompok huruf S dan D.</p>
+
+<p>Cara Pak Dengklek menebak adalah sebagai berikut: Pak Blangkon memberikan suatu bilangan N yang merupakan panjang string DNA dari ayam yang ingin Pak Dengklek ketahui DNA-nya. Selain itu, Pak Blangkon juga memberikan bilangan K yang merupakan batas pertanyaan yang boleh Pak Dengklek tanyakan sebelum Pak Dengklek harus menebak string DNA yang dimiliki ayam tersebut.</p>
+
+<p>Setiap kali Pak Dengklek bertanya, ia akan memberikan suatu string. Setelah itu Pak Blangkon akan membalas YA atau TIDAK berdasarkan apakah string yang ditanyakan Pak Dengklek merupakan substring dari DNA ayam yang sedang ingin Pak Dengklek ketahui (YA jika substring dan TIDAK jika bukan). Sebagai informasi, X merupakan substring dari Y apabila X terdiri atas setidaknya satu karakter, dan X dapat dihasilkan dengan membuang nol atau lebih huruf-huruf awalan Y dan nol atau lebih huruf-huruf akhiran Y. Sebagai contoh, BEBE, EBE, BEK, dan BEBEK adalah substring dari BEBEK, sedangkan BEEK bukan substring dari BEBEK.</p>
+
+<p>Pak Dengklek pun kebingungan dengan cara untuk menebak DNA ayam-ayam Pak Blangkon. Bantulah Pak Dengklek menentukan DNA ayam Pak Blangkon!</p>
+
+<h3>Format Interaksi</h3>
+
+<p>Pada mulanya, program Anda akan menerima sebuah baris berisi <em>label kasus uji</em>. Label kasus uji adalah sebuah <em>string</em> yang dijelaskan sebagai berikut:</p>
+
+<ul>
+	<li>Panjang <em>string</em> tersebut adalah banyaknya subsoal ditambah satu.</li>
+	<li>Karakter ke-0 (indeks dimulai dari 0) akan berisi 0 jika kasus uji tersebut merupakan contoh kasus uji, atau berisi &#39;.&#39; (titik) jika bukan.</li>
+	<li>Untuk setiap nilai i di antara 1 hingga banyaknya subsoal, berlaku:
+	<ul>
+		<li>jika kasus uji tersebut memenuhi batasan subsoal ke-i, maka karakter ke-i berisi i, atau</li>
+		<li>jika kasus uji tersebut tidak memenuhi batasan subsoal ke-i, maka karakter ke-i berisi karakter &#39;.&#39; (titik).</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Sebagai contoh apabila label sebuah kasus uji sebuah soal adalah <kbd>0..345</kbd>, maka:</p>
+
+<ul>
+	<li>Soal tersebut memiliki 5 buah subsoal,</li>
+	<li>Kasus uji tersebut merupakan contoh kasus uji, dan</li>
+	<li>Kasus uji tesebut memenuhi batasan subsoal ke-3, ke-4, dan ke-5.</li>
+</ul>
+
+<p>Kemudian, program Anda akan menerima sebuah baris berisi dua buah bilangan bulat N dan K. Setelah itu, program Anda dapat melakukan serangkaian tindakan, yang masing-masing merupakan salah satu dari:</p>
+
+<ul>
+	<li>
+	<p>Bertanya. Program Anda harus mengeluarkan sebuah baris berisi <code>TANYA &lt;pertanyaan&gt;</code> yakni, string <code>TANYA</code> diikuti dengan substring yang Anda tanyakan. Setiap kali program Anda selesai bertanya, program Anda membaca sebuah string yang dijamin merupakan salah satu dari <code>YA</code> atau <code>TIDAK</code>, sesuai dengan definisi pada deskripsi soal.</p>
+	</li>
+	<li>
+	<p>Menebak. Program Anda harus mengeluarkan sebuah baris berisi <code>JAWAB &lt;jawaban&gt;</code> yakni, string <code>JAWAB</code> diikuti dengan string DNA tebakan Anda. Program Anda <strong>harus berhenti</strong> setelah melakukan ini.</p>
+	</li>
+</ul>
+
+<h3>Contoh Interaksi</h3>
+
+<p>Misalkan string DNA yang sebenarnya adalah <code>BAASSDDFFF</code>. Berikut adalah contoh interaksi yang mungkin terjadi.</p>
+
+<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:500px">
+	<thead>
+		<tr>
+			<th scope="col">Keluaran Program Anda</th>
+			<th scope="col">Keluaran Program Grader</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td><code>0.....<br />
+			10 3</code></td>
+		</tr>
+		<tr>
+			<td><code>TANYA ABCD</code></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><code>TIDAK</code></td>
+		</tr>
+		<tr>
+			<td><code>TANYA AASSDDFF</code></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><code>YA</code></td>
+		</tr>
+		<tr>
+			<td><code>TANYA DFFF</code></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><code>YA</code></td>
+		</tr>
+		<tr>
+			<td><code>JAWAB BAASSDDFFF</code></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><code>(interaksi selesai)</code></td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Subsoal</h3>
+
+<p>Pada semua subsoal, berlaku:</p>
+
+<ul>
+	<li>String DNA hanya terdiri atas huruf kapital A s.d. Z</li>
+</ul>
+
+<h4>Subsoal 1 (5 poin)</h4>
+
+<ul>
+	<li>N = 10</li>
+	<li>K = 10</li>
+	<li>String DNA hanya terdiri atas huruf A, B, atau C</li>
+</ul>
+
+<h4>Subsoal 2 (12 poin)</h4>
+
+<ul>
+	<li>N = 10</li>
+	<li>K = 350</li>
+</ul>
+
+<h4>Subsoal 3 (32 poin)</h4>
+
+<ul>
+	<li>N = 26</li>
+	<li>K = 350</li>
+	<li>String DNA mengandung semua karakter dari A s.d. Z masing-masing tepat sekali</li>
+</ul>
+
+<h4>Subsoal 4 (22 poin)</h4>
+
+<ul>
+	<li>1 &le; N &le; 100</li>
+	<li>K = 500</li>
+</ul>
+
+<h4>Subsoal 5 (29 poin)</h4>
+
+<ul>
+	<li>1 &le; N &le; 1.000</li>
+	<li>K = 750</li>
+</ul>
+
+<h3>Peringatan</h3>
+
+<p>Jika program Anda melakukan salah satu dari hal-hal di bawah ini:</p>
+
+<ul>
+	<li>melakukan tindakan di luar format yang ditentukan,</li>
+	<li>menebak atau menjawab dengan string yang mengandung karakter selain alfabet A s.d. Z, atau yang panjangnya nol (string kosong) atau melebihi N,</li>
+	<li>bertanya lebih dari K kali, atau</li>
+	<li>salah menjawab string DNA</li>
+</ul>
+
+<p>maka nilai Anda untuk subsoal yang bersangkutan adalah nol.</p>
+
+<p>Selain itu, pastikan pula bahwa program Anda harus berhenti jika selesai melakukan interaksi. Bila tidak, maka Anda mungkin mendapatkan <em>Time Limit Exceeded</em>, <em>Runtime Error</em>, atau <em>Internal Error</em> untuk kasus uji yang bersangkutan.</p>

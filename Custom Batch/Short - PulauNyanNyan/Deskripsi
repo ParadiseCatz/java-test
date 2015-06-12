@@ -1,0 +1,7 @@
+Alkisah di sebuah pulau NyanNyan terdapat seorang dewa yang dapat menguasai musim-musim yang terjadi di bagian pulau tersebut. Pulau tersbut terbagi menjadi 9 bagian yang di susun menjadi segiempat 3 x 3, dengan setiap bagian mempunyai nomor sebagai berikut:
+123
+456
+789
+Pada awalnya pulau tersebut memiliki musim yang sangat berantakan, di setiap bagian bisa saja memiliki musim yang berbeda. Sang dewa ingin menyamakan kembali semua musim di semua bagian. Ada 4 Musim yang terjadi di pulau tersebut, yaitu: Musim Semi, Musim Panas, Musim Gugur, dan Musim Dingin. Dikarenakan sang dewa sangat menyukai Musim Semi, maka sang dewa ingin menyamakan semua musim di pulau tersebut menjadi Musim Semi. Namun sang dewa hanya bisa mengubah musim di bagian pulau tersebut dengan pola tertentu, yaitu sebagai beikut:
+
+Misalkan sang dewa melakukan pola 1, maka bagian 1, 4, dan 7 mengalami perubahan musim. Perubahan musim terjadi secara urut yaitu bila awalnya di bagian yang terkena perubahan musim adalah Musim Semi maka setelah diubah akan menjadi Musim Panas, dan bila awalnya adalah Musim Panas maka setelah diubah akan menjadi Musim Gugur. Begitu seterusnya hingga Musim Dingin ke Musim Semi. Namun sang dewa membutuhkan energi yang banyak untuk mengubah musim di pulau tersebut, meskipun untuk setiap pola sang dewa mengeluarkan jumlah energi yang sama. Bantulah sang dewa menentukan urutan pola yang terpendek sehingga energi yang dikeluarkan oleh sang dewa minimal.

@@ -1,0 +1,25 @@
+Nonogram is a solitaire game played on a n × m grid, where each cell has to be painted either black or white. Every row (and column) has a list of integer numbers, which correspond to the lengths of the runs of black squares in that row (or column), in order.
+
+For instance, this is an example of solved nonogram:
+
+
+Please write a program to solve nonograms.
+
+Input
+
+Test case begins with a line with n and m, followed by n lines with the numbers of the i-th row, followed by m lines with the numbers of the j-th column. The first number from each line represent the number of numbers trailing. Assume 1 ≤ n ≤ 15. Every given nonogram has exactly one solution.
+
+Output
+
+For every case, print the solution of the nonogram.
+
+Sample Input
+2 2
+1 2
+1 1
+1 2
+1 1
+
+Sample Output
+**
+*.

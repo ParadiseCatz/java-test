@@ -1,0 +1,18 @@
+N Queens Problem
+Description
+Given a chess board of N x N, find one ways to place N queens so that they don't each other.
+Input
+The input contains only one number N.
+Output
+Print N x N grid with '.' represent empty cell, and '*' represent there's queen in that cell. If there's no combination possible, print -1.
+Sample Input
+4
+Sample Output
+..*.
+*...
+...*
+.*..
+Subtask 1
+N <= 10
+Subtask 2
+N <= 1000
